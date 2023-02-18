@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="task3.css"> -->
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                background-color: #f8f8f8;
+            }
+            
+            /*title box*/
+            .flex-box-title{
+                width: 59%;
+                text-align: center;
+                font-size: 48px;
+                font-weight: bold;
+                margin-top: 16px;
+                line-height: 60px;
+            }
+            
+            /* to hold 6 icons */
+            .flex-box-icons-big{
+                display: flex;
+                width: 68%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: 57px;
+            }
+            /* to hold 3 icons */
+            .flex-box-icons-small{
+                display: flex;
+                width: 87%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                margin-bottom: 6%;
+            }
+
+            /*1 icon */
+            .flex-box-icons-small-individual{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 6%;
+            }
+
+            /* text in icon */
+            .icon-text-header{
+                font-weight: bold;
+                font-size: 19pt;
+                margin-bottom: 10px;
+                margin-top: 29px;
+            }
+            .icon-text-header-2{
+                font-weight: bold;
+                font-size: 19pt;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                padding-top: 28px;
+            }
+            .icon-text{
+                margin-top: 10px;
+                width: 365px;
+                font-size: 14pt;
+                text-align: center;
+                line-height: 28px;
+            }
+            /* image */
+            .image {
+                width:230px;
+                height:240px;
+            }
+            .image-2 {
+                width:230px;
+                height:240px;
+                margin-top: 13px;
+            }
+            .image-3 {
+                width:165px;
+                height:150px;
+                margin-top: 15px;
+                margin-bottom: 38px;
+            }
+
+            /*rectangle box*/
+            .rectangle-box{
+                display: flex;
+                width: 59%;
+                height: 219px;
+                background-color: #FFFF70;
+                flex-direction: column;
+                position: relative;
+            }
+
+            /*rectangle-box-text*/
+            h1 {
+                font-size: 36pt;
+                margin-left: 34px;
+                margin-top: 12px;
+                margin-bottom: 10px;
+            }
+            .rectangle-box-text{
+                font-size: 19pt;
+                margin-left: 33px;
+                width: 59%;
+                line-height: 30px;
+            }
+            .rectangle-box-text-2{
+                font-size: 15pt;
+                margin-left: 34px;
+                margin-top: 12px;
+            }
+            
+            /*purple box*/
+            .purple-box{
+                background-color: #8E42FF; 
+                color: white; 
+                margin: 0px;
+                border-radius: 5px;
+                padding: 3px;
+            }
+
+            /*app store logo*/
+            .app-store{
+                position: absolute;
+                right: 21%;
+                bottom: 23%;
+                width: 17%;
+                height: auto;
+            }
+            /*google play logo*/
+            .google-play{
+                position: absolute;
+                right: 3%;
+                bottom: 20%;
+                width: 17%;
+                height: auto;
+            }
+
+            /*when hovered */
+            @media (hover: hover) {
+                .purple-box:hover {
+                    opacity: 0.7;
+                }
+                .flex-box-icons-small-individual:hover{
+                    opacity: 0.5;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                .flex-box-icons-small {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-box-title">We're here to help you get more credit cards to buy more things</div>
+        <div class="flex-box-icons-big">
+            <div class="flex-box-icons-small">
+                <div class="flex-box-icons-small-individual">
+                    <img src="assets/q5_icon1.svg" class="image"/>
+                    <div class="icon-text-header">No fee cards</div>
+                    <div class="icon-text">Say bye bye to card parment fees</div>
+                </div>
+                <div class="flex-box-icons-small-individual">
+                    <img src="assets/q5_icon2.svg" class="image"/>
+                    <div class="icon-text-header">Pay however</div>
+                    <div class="icon-text">Pay with google pay or apple pay</div>
+                </div>
+                <div class="flex-box-icons-small-individual">
+                    <img src="assets/q5_icon3.svg" class="image-2"/>
+                    <div class="icon-text-header-2">10/10 interest rates</div>
+                    <div class="icon-text">Nothing is more exciting given the economic climate</div>
+                </div>
+            </div>
+            <div class="flex-box-icons-small">
+                <div class="flex-box-icons-small-individual">
+                    <img src="assets/q5_icon4.svg" class="image-3"/>
+                    <div class="icon-text-header-2">Easy to use app</div>
+                    <div class="icon-text">All of the financial information you need in one place</div>
+                </div>
+                <div class="flex-box-icons-small-individual">
+                    <img src="assets/q5_icon5.svg" class="image-3"/>
+                    <div class="icon-text-header-2">Built in calendar</div>
+                    <div class="icon-text">Built in calendar will help you track your payments</div>
+                </div>
+                <div class="flex-box-icons-small-individual">
+                    <img src="assets/q5_icon6.svg" class="image-3"/>
+                    <div class="icon-text-header-2">AU call centres</div>
+                    <div class="icon-text">Not that it makes a difference as you won't call anyway</div>
+                </div>
+            </div>
+        </div>
+        <div class="rectangle-box">
+            <h1>Get started now! 🙌</h1>
+            <div class="rectangle-box-text">Join now using our invite code <span class="purple-box">UNSWROX</span> and get $1.10 after your second purchase.</div>
+            <div class="rectangle-box-text-2">Offer available for a limited time.</div>
+            <img src="assets/app-store.png" class="app-store"/>
+            <img src="assets/google-play.png" class="google-play"/>
+        </div>
+    </body>
+</html>
