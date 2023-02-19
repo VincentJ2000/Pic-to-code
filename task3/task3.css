@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f8f8f8;
+}
+
+/*title box*/
+.flex-box-title{
+    width: 59%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 16px;
+    line-height: 60px;
+}
+
+/* to hold 6 icons */
+.flex-box-icons-big{
+    display: flex;
+    width: 68%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3.8%;
+}
+/* to hold 3 icons */
+.flex-box-icons-small{
+    display: flex;
+    width: 87%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 6%;
+}
+.flex-box-icons-small-2{
+    display: flex;
+    width: 87%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 6%;
+}
+
+/*to hold 1 icon's header, text and image*/
+.flex-box-icons-small-individual{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6%;
+}
+.flex-box-icons-small-individual-2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+/* text in icon */
+.icon-text-header{
+    font-weight: bold;
+    font-size: 19pt;
+    margin-bottom: 10px;
+    margin-top: 29px;
+}
+.icon-text-header-2{
+    font-weight: bold;
+    font-size: 19pt;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 28px;
+}
+.icon-text{
+    margin-top: 10px;
+    width: 365px;
+    font-size: 14pt;
+    text-align: center;
+    line-height: 28px;
+}
+
+/* image */
+.image {
+    width:230px;
+    height:240px;
+}
+.image-2 {
+    width:230px;
+    height:240px;
+    margin-top: 13px;
+}
+.image-3 {
+    width:165px;
+    height:150px;
+    margin-top: 15px;
+    margin-bottom: 38px;
+}
+
+/*rectangle box*/
+.rectangle-box{
+    display: flex;
+    width: 59%;
+    background-color: #FFFF70;
+    flex-direction: row;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+
+/*containers inside the rectangle box*/
+/*container 1*/
+.container-1{
+    width: 60%;
+}
+/*container 2*/
+.container-2{
+    width: 20%;
+}
+/*container 3*/
+.container-3{
+    width: 20%;
+}
+
+/*rectangle-box-text*/
+h1 {
+    font-size: 36pt;
+    margin-left: 34px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.rectangle-box-text{
+    font-size: 19pt;
+    margin-left: 33px;
+    width: 100%;
+    line-height: 30px;
+}
+.rectangle-box-text-2{
+    font-size: 15pt;
+    margin-left: 34px;
+    margin-top: 12px;
+    margin-bottom: 4%;
+}
+
+/*purple box for UNSWROX*/
+.purple-box{
+    background-color: #8E42FF; 
+    color: white; 
+    margin: 0px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/*app store logo*/
+.app-store{
+    width: 86%;
+    height: auto;
+    margin-top: 110px;
+    margin-left: 24px;
+}
+/*google play logo*/
+.google-play{
+    width: 85%;
+    height: auto;
+    margin-top: 114px;
+}
+
+/*when hovered */
+@media (hover: hover) {
+    .purple-box:hover {
+        opacity: 0.7;
+    }
+    .flex-box-icons-small-individual:hover{
+        opacity: 0.5;
+    }
+    .flex-box-icons-small-individual-2:hover{
+        opacity: 0.5;
+    }
+}
+
+/*when screen's width <= 1400px */
+@media screen and (max-width: 1400px) {
+
+    .flex-box-icons-small {
+        flex-direction: column;
+    }
+    .flex-box-icons-small-2{
+        flex-direction: column;
+        margin-top: 31%;
+        margin-bottom: 1%;
+    }
+    .flex-box-icons-small-individual-2{
+        margin-top: 20%;
+    }
+    .flex-box-icons-big {
+        margin-top: 9px;
+        margin-bottom: 18%;;
+    }
+    .flex-box-title {
+        width: 82%;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 32px;
+        line-height: 46px;
+    }
+    .rectangle-box{
+        flex-direction: column;
+        align-items: center;
+        width: 91%;
+        height: 30%;
+        margin-top: 9%;
+    }
+    /*container 1*/
+    .container-1{
+        width: 100%;
+        height: 61%;
+    }
+    /*container 2*/
+    .container-2{
+        width: 100%;
+        height: 17%;
+    }
+    /*container 3*/
+    .container-3{
+        width: 100%;
+        height: 20%;
+    }
+    .app-store{
+        width: 50%;
+        margin-top: 0px;
+        margin-left: 25%;
+    }
+    .google-play{
+        width: 51%;
+        margin-top: 0%;
+        margin-left: 25%;
+        margin-bottom: 8%;
+    }
+    /*rectangle-box-text*/
+    h1 {
+        text-align: center;
+        line-height: 62%;
+        margin-left: 1%;
+        margin-top: 8%;
+        margin-bottom: 5%;
+        font-size: 36pt;
+    }
+    .rectangle-box-text{
+        text-align: center;
+        margin-left: 7%;
+        margin-bottom: 0%;
+        width: 88%;
+        line-height: 131%;
+    }
+    .rectangle-box-text-2{
+        text-align: center;
+        margin-left: 0%;
+        margin-bottom: 7%;
+        margin-top: 2%;
+    } 
+}
