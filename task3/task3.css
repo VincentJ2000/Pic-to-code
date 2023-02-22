@@ -170,16 +170,14 @@ h1 {
 }
 
 /*when hovered */
-@media (hover: hover) {
-    .purple-box:hover {
-        opacity: 0.7;
-    }
-    .flex-box-icons-small-individual:hover{
-        opacity: 0.5;
-    }
-    .flex-box-icons-small-individual-2:hover{
-        opacity: 0.5;
-    }
+.purple-box:hover {
+    opacity: 0.7;
+}
+.flex-box-icons-small-individual:hover{
+    opacity: 0.5;
+}
+.flex-box-icons-small-individual-2:hover{
+    opacity: 0.5;
 }
 
 /*when screen's width <= 1400px */
